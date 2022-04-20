@@ -8,9 +8,13 @@
     "files": [
         "lib/"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/eliburgi/random-name.git"
+    },
     "scripts": {
         "test": "npm run test",
-        "clean": "rd -r lib/",
+        "clean": "rmdir lib",
         "build": "npm run clean && npx tsc -p tsconfig.json && npx tsc -p tsconfig-cjs-json",
         "prepublish": "npm run build"
     },
