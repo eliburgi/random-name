@@ -1,0 +1,26 @@
+{
+    "name": "easy-log-to-file",
+    "version": "1.0.0",
+    "description": "A simple logger to file.",
+    "main": "./lib/cjs/index.js",
+    "types": "./lib/cjs/index.d.ts",
+    "module": ".lib/esm/index.js",
+    "files": [
+        "lib/"
+    ],
+    "scripts": {
+        "test": "npm run test",
+        "clean": "rd -r lib/",
+        "build": "npm run clean && npx tsc -p tsconfig.json && npx tsc -p tsconfig-cjs-json",
+        "prepublish": "npm run build"
+    },
+    "keywords": [
+        "logging",
+        "file"
+    ],
+    "author": "Elias Burgstaller",
+    "license": "MIT",
+    "dependencies": {
+        "typescript": "^4.6.3"
+    }
+}
