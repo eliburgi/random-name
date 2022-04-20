@@ -14,7 +14,7 @@
     },
     "scripts": {
         "test": "jest --coverage",
-        "clean": "rmdir lib",
+        "clean": "rm -rf lib",
         "build": "npm run clean && npx tsc -p tsconfig.json && npx tsc -p tsconfig-cjs-json",
         "prepublish": "npm run build"
     },
